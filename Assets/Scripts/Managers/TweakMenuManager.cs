@@ -69,57 +69,22 @@ namespace Managers
         private void ApplyChanges()
         {
             if (!string.IsNullOrEmpty(lives.text))
-            {
                 dataManager.lives = dataManager.remainingLives = int.Parse(lives.text);
-            }
-            if (!string.IsNullOrEmpty(countDown.text))
-            {
-                dataManager.countDown = int.Parse(countDown.text);
-            }
-            if (!string.IsNullOrEmpty(coins.text))
-            {
-                dataManager.coins = int.Parse(coins.text);
-            }
-            if (!string.IsNullOrEmpty(keyPrice.text))
-            {
-                dataManager.keyPrice = int.Parse(keyPrice.text);
-            }
-            if (!string.IsNullOrEmpty(coinPrice.text))
-            {
-                dataManager.coinPrice = float.Parse(coinPrice.text);
-            }
-            if (!string.IsNullOrEmpty(initialSpeed.text))
-            {
-                dataManager.initialSpeed = float.Parse(initialSpeed.text);
-            }
-            if (!string.IsNullOrEmpty(lateralSpeed.text))
-            {
-                dataManager.lateralSpeed = float.Parse(lateralSpeed.text);
-            }
-            if (!string.IsNullOrEmpty(fallThreshold.text))
-            {
-                dataManager.fallThreshold = float.Parse(fallThreshold.text);
-            }
+            if (!string.IsNullOrEmpty(countDown.text)) dataManager.countDown = int.Parse(countDown.text);
+            if (!string.IsNullOrEmpty(coins.text)) dataManager.coins = int.Parse(coins.text);
+            if (!string.IsNullOrEmpty(keyPrice.text)) dataManager.keyPrice = int.Parse(keyPrice.text);
+            if (!string.IsNullOrEmpty(coinPrice.text)) dataManager.coinPrice = float.Parse(coinPrice.text);
+            if (!string.IsNullOrEmpty(initialSpeed.text)) dataManager.initialSpeed = float.Parse(initialSpeed.text);
+            if (!string.IsNullOrEmpty(lateralSpeed.text)) dataManager.lateralSpeed = float.Parse(lateralSpeed.text);
+            if (!string.IsNullOrEmpty(fallThreshold.text)) dataManager.fallThreshold = float.Parse(fallThreshold.text);
             if (!string.IsNullOrEmpty(gravityMultiplier.text))
-            {
                 dataManager.gravityMultiplier = float.Parse(gravityMultiplier.text);
-            }
             if (!string.IsNullOrEmpty(jumpForcePercentage.text))
-            {
                 dataManager.jumpForcePercentage = float.Parse(jumpForcePercentage.text);
-            }
-            if (!string.IsNullOrEmpty(maxJumpForce.text))
-            {
-                dataManager.maxJumpForce = float.Parse(maxJumpForce.text);
-            }
-            if (!string.IsNullOrEmpty(maxJumps.text))
-            {
-                dataManager.maxJumps = int.Parse(maxJumps.text);
-            }
+            if (!string.IsNullOrEmpty(maxJumpForce.text)) dataManager.maxJumpForce = float.Parse(maxJumpForce.text);
+            if (!string.IsNullOrEmpty(maxJumps.text)) dataManager.maxJumps = int.Parse(maxJumps.text);
             if (!string.IsNullOrEmpty(jumpLoadThreshold.text))
-            {
                 dataManager.jumpLoadThreshold = float.Parse(jumpLoadThreshold.text);
-            }
             tweakMenuGameObject.SetActive(false);
         }
 

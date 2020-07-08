@@ -146,12 +146,6 @@ namespace Managers
             messageDisplay.ShowDisplay();
         }
 
-        public void TogglePauseGame()
-        {
-            // PauseGame();
-            // Time.timeScale = Math.Abs(Time.timeScale) > 0.001f ? 0 : 1;
-        }
-
         public void PauseGame()
         {
             Time.timeScale = 0;
