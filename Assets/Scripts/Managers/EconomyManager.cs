@@ -38,6 +38,7 @@ namespace Managers
                 gameManager.ResumeGame();
                 messageDisplay.HideDisplay();
                 keyHolder.RemoveKey(keyType);
+                DataManager.Instance.purchasing = false;
             }
             else
             {

@@ -17,6 +17,8 @@ namespace Managers
         [SerializeField] private TMP_InputField keyPrice;
         [SerializeField] private TMP_InputField coinPrice;
         [SerializeField] private TMP_InputField initialSpeed;
+        [SerializeField] private TMP_InputField speedIncreaseAmount;
+        [SerializeField] private TMP_InputField speedIncreaseInterval;
         [SerializeField] private TMP_InputField lateralSpeed;
         [SerializeField] private TMP_InputField fallThreshold;
         [SerializeField] private TMP_InputField gravityMultiplier;
@@ -42,6 +44,8 @@ namespace Managers
             keyPrice.text = dataManager.keyPrice.ToString();
             coinPrice.text = dataManager.coinPrice.ToString();
             initialSpeed.text = dataManager.initialSpeed.ToString();
+            speedIncreaseAmount.text = dataManager.speedIncreaseAmount.ToString();
+            speedIncreaseInterval.text = dataManager.speedIncreaseInterval.ToString();
             lateralSpeed.text = dataManager.lateralSpeed.ToString();
             fallThreshold.text = dataManager.fallThreshold.ToString();
             gravityMultiplier.text = dataManager.gravityMultiplier.ToString();
@@ -75,6 +79,8 @@ namespace Managers
             if (!string.IsNullOrEmpty(keyPrice.text)) dataManager.keyPrice = int.Parse(keyPrice.text);
             if (!string.IsNullOrEmpty(coinPrice.text)) dataManager.coinPrice = float.Parse(coinPrice.text);
             if (!string.IsNullOrEmpty(initialSpeed.text)) dataManager.initialSpeed = float.Parse(initialSpeed.text);
+            if (!string.IsNullOrEmpty(speedIncreaseAmount.text)) dataManager.speedIncreaseAmount = float.Parse(speedIncreaseAmount.text);
+            if (!string.IsNullOrEmpty(speedIncreaseInterval.text)) dataManager.speedIncreaseInterval = float.Parse(speedIncreaseInterval.text);
             if (!string.IsNullOrEmpty(lateralSpeed.text)) dataManager.lateralSpeed = float.Parse(lateralSpeed.text);
             if (!string.IsNullOrEmpty(fallThreshold.text)) dataManager.fallThreshold = float.Parse(fallThreshold.text);
             if (!string.IsNullOrEmpty(gravityMultiplier.text))

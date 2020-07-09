@@ -19,6 +19,8 @@ namespace Managers
         [HideInInspector] public bool purchasing;
         [Header("Player Movement")] 
         public float initialSpeed;
+        public float speedIncreaseAmount;
+        public float speedIncreaseInterval;
         public float speed;
         public float lateralSpeed;
         public float fallThreshold;

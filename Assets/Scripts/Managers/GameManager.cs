@@ -10,9 +10,6 @@ namespace Managers
 {
     public class GameManager : MonoBehaviour
     {
-        private static GameManager instance;
-        public static GameManager Instance => instance;
-        [SerializeField] private float speedIncreaseAmount, speedIncreaseInterval;
         [SerializeField] private PlayerMovement playerMovement;
         [SerializeField] private SpeedDisplay speedDisplay;
         [SerializeField] private CountDownDisplay countDownDisplay;
@@ -26,16 +23,7 @@ namespace Managers
 
         private void Awake()
         {
-            
             Application.targetFrameRate = 60;
-            if (instance == null)
-            {
-                instance = this;
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
         }
 
         private void Start()
@@ -84,8 +72,8 @@ namespace Managers
             speedDisplay.UpdateDisplay(playerMovement.speed);
             while (true)
             {
-                yield return new WaitForSeconds(speedIncreaseInterval);
-                playerMovement.speed += speedIncreaseAmount;
+                yield return new WaitForSeconds(DataManager.Instance.speedIncreaseInterval);
+                playerMovement.speed += DataManager.Instance.speedIncreaseAmount;
                 speedDisplay.UpdateDisplay(playerMovement.speed);
             }
         }
