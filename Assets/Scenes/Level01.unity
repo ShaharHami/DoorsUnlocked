@@ -2207,8 +2207,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7552,7 +7552,7 @@ GameObject:
   - component: {fileID: 1304082864}
   - component: {fileID: 1304082863}
   m_Layer: 5
-  m_Name: MasterKeys
+  m_Name: OmniKeys
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7618,8 +7618,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -12056,7 +12056,7 @@ PrefabInstance:
     - target: {fileID: 1513731296266583915, guid: 0da1f39c6a1681c48b2a05236af44de5,
         type: 3}
       propertyPath: m_Name
-      value: Master Key
+      value: Omni Key
       objectReference: {fileID: 0}
     - target: {fileID: 1513731296266583916, guid: 0da1f39c6a1681c48b2a05236af44de5,
         type: 3}
