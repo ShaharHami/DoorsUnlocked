@@ -10,7 +10,7 @@ namespace Keys
             Red,
             Green,
             Blue,
-            Master,
+            OmniKey,
         }
 
         public KeyType GetKeyType()

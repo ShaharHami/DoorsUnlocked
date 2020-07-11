@@ -66,10 +66,10 @@ namespace Keys
             }
             else
             {
-                if (ContainsKey(Key.KeyType.Master))
+                if (ContainsKey(Key.KeyType.OmniKey))
                 {
                     door.OpenDoor();
-                    RemoveKey(Key.KeyType.Master);
+                    RemoveKey(Key.KeyType.OmniKey);
                 }
                 else
                 {
